@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/composer" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/runtime" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/event-dispatcher-contracts" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
+</project>
