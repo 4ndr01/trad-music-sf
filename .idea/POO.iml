@@ -27,6 +27,7 @@
       <excludeFolder url="file://$MODULE_DIR$/projetsymfony/vendor/friendsofphp/proxy-manager-lts" />
       <excludeFolder url="file://$MODULE_DIR$/projetsymfony/vendor/doctrine/doctrine-fixtures-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/projetsymfony/vendor/doctrine/data-fixtures" />
+      <excludeFolder url="file://$MODULE_DIR$/projetsymfony/vendor/symfony/apache-pack" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

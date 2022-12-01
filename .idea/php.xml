@@ -58,6 +58,7 @@
       <path value="$PROJECT_DIR$/projetsymfony/vendor/friendsofphp/proxy-manager-lts" />
       <path value="$PROJECT_DIR$/projetsymfony/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/projetsymfony/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/apache-pack" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
