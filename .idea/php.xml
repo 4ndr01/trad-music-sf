@@ -33,6 +33,9 @@
       <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/finder" />
       <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/filesystem" />
       <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/nikic/php-parser" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
