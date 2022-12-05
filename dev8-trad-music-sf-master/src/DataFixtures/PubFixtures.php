@@ -13,7 +13,7 @@ class PubFixtures extends Fixture implements DependentFixtureInterface
     {
         $oconnells = new Pub();
         $oconnells->setName("O'Connell's");
-        $oconnells->setImage("oconnell.jpg");
+        $oconnells->setImage("oconnells.jpg");
         $oconnells->setAddress("6 Pl. du Parlement de Bretagne");
         $oconnells->setZipCode("35000");
         $oconnells->setCity("Rennes");

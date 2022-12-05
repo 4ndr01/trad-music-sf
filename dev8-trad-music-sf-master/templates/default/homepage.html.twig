@@ -1,13 +1,39 @@
 {% extends 'base.html.twig' %}
-
 {% block body %}
+
+
     <h1>Accueil</h1>
 
-    {# <?php foreach ($instruments as $instrument): ?> #}
+<section class="container">
+    <h2>Next gigs</h2>
+    <div class="grid">
+    {% for gig in gigs %}
+        <article class="card">
 
-    {# Boucler sur la liste des instruments #}
-    {% for instrument in instruments %}
-        {{ instrument.name }}
+
+
+        <img src="uploads/{{ gig.pub.image }}" alt="image du concert">
+                <h3>{{ gig.pub.name }}</h3>
+
+        </article>
     {% endfor %}
 
+    </div>
+
+    <h2>Available musicians</h2>
+    <div class="grid">
+
+
+
+            {% for musicien in musiciens %}
+                {% include 'musician/_card.html.twig' with {'musicien':musicien}only%}
+            {% endfor %}
+
+
+
+
+
+    </div>
+
+</section>
 {% endblock %}

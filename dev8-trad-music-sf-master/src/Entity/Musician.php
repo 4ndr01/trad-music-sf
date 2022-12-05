@@ -61,6 +61,7 @@ class Musician extends User
 
     public function getImage(): ?string
     {
+
         return $this->Image;
     }
 
@@ -123,5 +124,10 @@ class Musician extends User
         }
 
         return $this;
+    }
+
+    public function getFullName(): string
+    {
+        return $this->getFirstName() . ' ' . $this->getLastName();
     }
 }
