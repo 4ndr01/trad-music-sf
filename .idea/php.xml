@@ -59,6 +59,11 @@
       <path value="$PROJECT_DIR$/projetsymfony/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/projetsymfony/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/apache-pack" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/projetsymfony/vendor/twig/twig" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />

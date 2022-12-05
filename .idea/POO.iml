@@ -28,6 +28,11 @@
       <excludeFolder url="file://$MODULE_DIR$/projetsymfony/vendor/doctrine/doctrine-fixtures-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/projetsymfony/vendor/doctrine/data-fixtures" />
       <excludeFolder url="file://$MODULE_DIR$/projetsymfony/vendor/symfony/apache-pack" />
+      <excludeFolder url="file://$MODULE_DIR$/projetsymfony/vendor/symfony/twig-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/projetsymfony/vendor/symfony/twig-bridge" />
+      <excludeFolder url="file://$MODULE_DIR$/projetsymfony/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/projetsymfony/vendor/twig/extra-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/projetsymfony/vendor/twig/twig" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
