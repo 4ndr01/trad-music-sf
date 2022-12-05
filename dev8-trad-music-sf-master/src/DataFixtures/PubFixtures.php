@@ -4,46 +4,52 @@ namespace App\DataFixtures;
 
 use App\Entity\Pub;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
+use Doctrine\Persistence\ObjectManager;
 
-class PubFixtures extends Fixture
+class PubFixtures extends Fixture implements DependentFixtureInterface
 {
-    public function load(ObjectManager|\Doctrine\Persistence\ObjectManager $manager): void
+    public function load(ObjectManager $manager): void
     {
-        $pub = new Pub();
-        $pub->setName('The Old Pint Pot');
-        $pub->setAddress('123 Main Street');
-        $pub->setCity('London');
-        $pub->setPostcode('SW1A 1AA');
-        $pub->setImage('https://www.oldpintpot.com/wp-content/uploads/2019/03/old-pint-pot-1.jpg');
-        $manager->persist($pub);
-        $this->addReference('pub1', $pub);
+        $oconnells = new Pub();
+        $oconnells->setName("O'Connell's");
+        $oconnells->setImage("oconnell.jpg");
+        $oconnells->setAddress("6 Pl. du Parlement de Bretagne");
+        $oconnells->setZipCode("35000");
+        $oconnells->setCity("Rennes");
+        $oconnells->setManager($this->getReference('manager-oconnells'));
+        $manager->persist($oconnells);
+        $this->addReference("pub-oconnells", $oconnells);
 
+        $templeBar = new Pub();
+        $templeBar->setName("Temple Bar");
+        $templeBar->setImage("templebar.jpg");
+        $templeBar->setAddress("47-48 Temple Bar");
+        $templeBar->setZipCode("D02 N725");
+        $templeBar->setCity("Dublin");
+        $templeBar->setManager($this->getReference('manager-templebar'));
+        $manager->persist($templeBar);
+        $this->addReference("pub-templebar", $templeBar);
 
+        $theBrazenHead = new Pub();
+        $theBrazenHead->setName("The Brazen Head");
+        $theBrazenHead->setImage("thebrazenhead.jpg");
+        $theBrazenHead->setManager($this->getReference('manager-thebrazenhead'));
+        $manager->persist($theBrazenHead);
+        $this->addReference("pub-thebrazenhead", $theBrazenHead);
 
-        $pub2 = new Pub();
-        $pub2->setName('The Old Pint Pot');
-        $pub2->setAddress('123 Main Street');
-        $pub2->setCity('London');
-        $pub2->setZipCode('SW1A 1AA');
-        $pub2->setImage('https://www.oldpintpot.com/wp-content/uploads/2019/03/old-pint-pot-1.jpg');
-        $manager->persist($pub2);
-        $this->addReference('pub2', $pub2);
-
-        $pub3 = new Pub();
-        $pub3->setName('The Old Pint Pot');
-        $pub3->setAddress('123 Main Street');
-        $pub3->setCity('London');
-        $pub3->setZipCode('SW1A 1AA');
-        $pub3->setImage('https://www.oldpintpot.com/wp-content/uploads/2019/03/old-pint-pot-1.jpg');
-        $manager->persist($pub3);
-        $this->addReference('pub3', $pub3);
+        $mulligans = new Pub();
+        $mulligans->setName("Mulligan's");
+        $mulligans->setImage("mulligans.jpg");
+        $mulligans->setManager($this->getReference('manager-mulligans'));
+        $manager->persist($mulligans);
+        $this->addReference("pub-mulligans", $mulligans);
 
         $manager->flush();
-
     }
 
-}
-{
-
-
+    public function getDependencies()
+    {
+        return [ManagerFixtures::class];
+    }
 }
