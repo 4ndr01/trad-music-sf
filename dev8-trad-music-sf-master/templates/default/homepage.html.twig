@@ -14,6 +14,8 @@
 
         <img src="uploads/{{ gig.pub.image }}" alt="image du concert">
                 <h3>{{ gig.pub.name }}</h3>
+            <time datetime="{{ gig.dateStart|date('Y-m-d h:i') }}"></time>
+            {{ gig.dateStart|date('l JS \\o\\f F \\a\\t g:i a') }}
 
         </article>
     {% endfor %}
