@@ -18,7 +18,7 @@ class DefaultController extends AbstractController
         // Récupérer la liste des instruments en base de données (SELECT * FROM instrument)
         $musicien = $musicienRepository->findAll();
         $instrument = $instrumentRepository->findAll();
-        $gig = $gigRepository->findAll();
+        $gig = $gigRepository->findFuture();
 
 
         // Appel le fichier de template Twig avec la méthode render

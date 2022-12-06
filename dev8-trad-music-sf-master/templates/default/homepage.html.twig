@@ -12,12 +12,14 @@
 
 
 
-        <img src="uploads/{{ gig.pub.image }}" alt="image du concert">
+        <img src="{{  asset('uploads/' ~ gig.pub.image) }}" alt="image du concert">
                 <h3>{{ gig.pub.name }}</h3>
             <time datetime="{{ gig.dateStart|date('Y-m-d h:i') }}"></time>
             {{ gig.dateStart|date('l JS \\o\\f F \\a\\t g:i a') }}
+            <a href="{{ path('gig_detail', {'id': gig.id}) }}" class="btn btn-primary">Voir le détail</a>
 
         </article>
+
     {% endfor %}
 
     </div>

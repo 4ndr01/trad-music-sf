@@ -39,6 +39,18 @@ class GigRepository extends ServiceEntityRepository
         }
     }
 
+
+    public function findFuture():array{
+        return $this->createQueryBuilder('gig')
+            ->addSelect('pub')
+            ->join('gig.pub','pub')
+            ->where('gig.dateStart > :now')
+            ->setParameter('now', new \DateTime())
+            ->orderBy('gig.dateStart', 'ASC')
+            ->getQuery()
+            ->getResult();
+
+    }
 //    /**
 //     * @return Gig[] Returns an array of Gig objects
 //     */
