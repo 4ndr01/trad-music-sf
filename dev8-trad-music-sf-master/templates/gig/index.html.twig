@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+{% block title %}*
+    bla
+{% endblock %}
+{% block body %}
+<article class="card">
+    <a href="{{ path('gig_detail', {'id': gig.id}) }}">
+        <img src="{{ asset('uploads/' ~ gig.pub.image) }}">
+        {{ gig.pub.name }}
+    </a>
+    {{ gig.pub.name }}
+    {{ gig.dateStart|date('l JS \\o\\f F \\a\\t g:i a') }}
+    {% for participant in gig.participants %}
+        <li>
+        {{ participant.instrument.name }}
+            {# On affiche le nom des musiciens si il y'en a #}
+        {% if participant.musician %}
+            {{ participant.musician.fullName }}
+        {% else %}
+            aucun participent
+        {% endif %}
+        </li>
+    {% endfor %}
+
+
+
+
+{% endblock %}
+
+
+
+

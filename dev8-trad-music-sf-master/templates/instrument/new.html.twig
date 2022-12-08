@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Create instrument{% endblock %}
+
+
+{% block body %}
+<section class="container">
+    <h1>Register instrument</h1>
+    {# Générer la balise form #}
+    {{ form_start(form) }}
+
+        {{ form_errors(form) }}
+
+        {# Générer l'ensemble des champs du formaulaire #}
+        {{ form_widget(form) }}
+
+
+        <button class="btn btn-primary">Register</button>
+
+
+
+
+    {{ form_end(form) }}
+
+</section>
+
+{% endblock %}
