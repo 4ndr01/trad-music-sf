@@ -28,7 +28,16 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <ul>
-                <li><a href="#">Connection</a></li>
+                {% if app.user %}
+                    <li><a href="{{ path('app_logout') }}">Logout</a></li>
+                {% else %}
+                    <li><a href="{{ path('app_login') }}">Login</a></li>
+                    <li><a href="{{ path('app_register') }}">Register</a></li>
+                    <p>heellooo</p>
+
+                {% endif %}
+
+
             </ul>
         </nav>
     </div>

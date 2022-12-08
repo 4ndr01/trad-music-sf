@@ -1,8 +1,12 @@
 <article class="card">
     <a href="{{ path('app_musician_detail', {'id': musicien.id}) }}">
-    <img src="uploads/{{ musicien.image }}">
-    {{ musicien.fullName }}
+        {% if musicien.image %}
+            <img src="uploads/{{ musicien.image }}">
+        {% else %}
+            <img src="{{ asset('uploads/user.webp') }}">
+        {% endif %}
     </a>
+    <h3>{{ musicien.fullName }}</h3>
 
 
 
